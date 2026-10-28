@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello</title>
+  <style>
+    :root {
+      --bg: #f7f5f0;
+      --fg: #1c1c1c;
+      color-scheme: light dark;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1a1a1a;
+        --fg: #f2f0ea;
+      }
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: "Pretendard", "Noto Sans KR", system-ui, sans-serif;
+    }
+    h1 {
+      font-size: clamp(2.5rem, 10vw, 6rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hello, World!</h1>
+</body>
+</html>
